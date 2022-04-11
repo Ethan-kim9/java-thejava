@@ -1,4 +1,4 @@
-package me.ethan.fromjava8;
+package me.ethan.second.fromjava8;
 
 public class Foo {
     public static void main(String[] args) {

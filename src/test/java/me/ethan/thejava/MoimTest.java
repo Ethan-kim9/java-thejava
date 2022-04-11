@@ -1,5 +1,6 @@
 package me.ethan.thejava;
 
+import me.ethan.first.thejava.Moim;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;

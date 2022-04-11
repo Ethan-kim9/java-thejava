@@ -1,4 +1,4 @@
-package me.ethan.fromjava8;
+package me.ethan.second.fromjava8;
 
 /*
 // 디폴트 메서드, 스테틱 메서드를 함께 정의를 해두어도, 추상 메서드는 하나이므로 함수형 인터페이스가 맞다.
