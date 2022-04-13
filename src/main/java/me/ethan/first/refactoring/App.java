@@ -24,7 +24,27 @@ public class App {
 //            }
 
 //        });
-            Arrays.stream(bookClass.getMethods()).forEach(System.out::println); // d 만 출력됨 -getFields 는 public 한 것들만 출력해줌
+//            Arrays.stream(bookClass.getMethods()).forEach(System.out::println); // d 만 출력됨 -getFields 는 public 한 것들만 출력해줌
+
+        Arrays.stream(Book.class.getAnnotations()).forEach(System.out::println); // 바로 뽑아냈을 때는 아무것도 출력이 안됨
+        Arrays.stream(MyBook.class.getAnnotations()).forEach(System.out::println); // 바로 뽑아냈을 때는 아무것도 출력이 안됨
+
+        System.out.println("--------------------------------");
+        Arrays.stream(Book.class.getDeclaredFields()).forEach(f-> {
+            Arrays.stream(f.getAnnotations()).forEach(System.out::println);
+        });
+
+        System.out.println("--------------------------------");
+        Arrays.stream(Book.class.getDeclaredFields()).forEach(f-> {
+            Arrays.stream(f.getAnnotations()).forEach(a -> {
+                if(a instanceof MyAnnotation){
+                    MyAnnotation myAnnotation = (MyAnnotation) a;
+                    System.out.println("myAnnotation.value() = " + myAnnotation.value());
+                    System.out.println("myAnnotation.name() = " + myAnnotation.name());
+                }
+            });
+        });
+
     }
 
     // 리플렉션이 제공하는 여러 기능들로, 클래스의 정보를 조회하고 순회할 수 있다.
