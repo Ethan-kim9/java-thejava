@@ -11,10 +11,8 @@ public class App {
 
         Class<?> aClass1 = Class.forName("me.ethan.first.refactoring.Book");
 
-    //    Arrays.stream(bookClass.getFields()).forEach(System.out::println); // d 만 출력됨 -getFields 는 public 한 것들만 출력해줌
-    //    Arrays.stream(bookClass.getDeclaredFields()).forEach(System.out::println); // 모든 필드가 다 출력됨
-
-
+//    Arrays.stream(bookClass.getFields()).forEach(System.out::println); // d 만 출력됨 -getFields 는 public 한 것들만 출력해줌
+//    Arrays.stream(bookClass.getDeclaredFields()).forEach(System.out::println); // 모든 필드가 다 출력됨
 //        Arrays.stream(bookClass.getDeclaredFields()).forEach(f -> {
 //            try {
 //                f.setAccessible(true); // 모두에 접근할 수 있게 하는 방법
@@ -22,7 +20,6 @@ public class App {
 //            } catch (IllegalAccessException e) {
 //                e.printStackTrace();
 //            }
-
 //        });
 //            Arrays.stream(bookClass.getMethods()).forEach(System.out::println); // d 만 출력됨 -getFields 는 public 한 것들만 출력해줌
 
