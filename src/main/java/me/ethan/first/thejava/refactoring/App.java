@@ -1,4 +1,4 @@
-package me.ethan.first.refactoring;
+package me.ethan.first.thejava.refactoring;
 
 import java.util.Arrays;
 
@@ -9,7 +9,7 @@ public class App {
         Book book = new Book();
         Class<? extends Book> aClass = book.getClass();
 
-        Class<?> aClass1 = Class.forName("me.ethan.first.refactoring.Book");
+        Class<?> aClass1 = Class.forName("me.ethan.first.thejava.refactoring.Book");
 
 //    Arrays.stream(bookClass.getFields()).forEach(System.out::println); // d 만 출력됨 -getFields 는 public 한 것들만 출력해줌
 //    Arrays.stream(bookClass.getDeclaredFields()).forEach(System.out::println); // 모든 필드가 다 출력됨

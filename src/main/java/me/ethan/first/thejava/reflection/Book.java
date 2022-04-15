@@ -1,4 +1,4 @@
-package me.ethan.first.reflection;
+package me.ethan.first.thejava.reflection;
 
 public class Book {
     public static String A = "A";

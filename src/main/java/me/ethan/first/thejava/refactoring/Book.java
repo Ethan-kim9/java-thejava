@@ -1,4 +1,4 @@
-package me.ethan.first.refactoring;
+package me.ethan.first.thejava.refactoring;
 
 @MyAnnotation(name = "hello" , number = 23)
 public class Book {

@@ -1,12 +1,11 @@
-package me.ethan.first.refactoring;
+package me.ethan.first.thejava.refactoring;
 
 
 import java.lang.annotation.*;
 
 @Retention(RetentionPolicy.RUNTIME)// 이렇게 해주면 계속 뽑힌다. (런타임 내내 유지함)
-@Target({ElementType.TYPE, ElementType.FIELD})// 타입과 필드에만 어노테이션을 붙일 수 있음
 @Inherited // 상속이 되는 어노테이션 (상속 받은 클래스에서도 어노테이션을 가져옴
-public @interface MyAnnotation {
+public @interface AnotherAnnotation {
 
     String name() default "Ethan"; // 이름을 선언해줌
 

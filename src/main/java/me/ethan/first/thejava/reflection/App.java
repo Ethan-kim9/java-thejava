@@ -1,13 +1,12 @@
-package me.ethan.first.reflection;
+package me.ethan.first.thejava.reflection;
 
 import java.lang.reflect.Constructor;
-import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 public class App {
     public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException, NoSuchFieldException {
-        Class<?> bookClass = Class.forName("me.ethan.first.reflection.Book");
+        Class<?> bookClass = Class.forName("me.ethan.first.thejava.reflection.Book");
         Constructor<?> constructor = bookClass.getConstructor(String.class);
         Book book = (Book) constructor.newInstance("myBook");
         System.out.println(book);
